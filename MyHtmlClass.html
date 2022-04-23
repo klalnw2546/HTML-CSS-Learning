@@ -1,6 +1,8 @@
  <!-- 
     Synctax HTML จะประกอบไปด้วย <แท็ก><เนื้อหา></แท็ก> 
 
+    บางแท็กอาจจะไม่ต้องมีเนื้อหา หรือแท็กปิดก็ได้ เช่น <br> <hr>
+
     โดยแต่ละแท็กก็จะสามารถกำหนด attribute ได้ เช่นสี ขนาด ความกว้าง 
 
     โครงสร้าง <html><head><body> <เนื้อหา> </body></head><html>
@@ -32,6 +34,8 @@
     <h5>Hello boy h5</h5>
     <h6>Hello boy h6</h6>
 
+    <hr> <!-- hr คือการสร้างเส้นคั่น -->
+
     <p>Hello boy p textttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p> <!-- tag p เป็นกลุ่มของ text ธรรมดาส่วนใหญ่ใช้กับเนื้อหายาวๆ -->
     <p><small>Hello boy with attribute small</small></p>   <!-- tag p ใส่ attribute เพิ่มลูกเล่นให้ text ได้-->
     <p><strong>Hello boy with attribute strong</strong></p>
@@ -40,9 +44,64 @@
     <p><u>Hello boy with attribute u</u></p>
     <p><del>Hello boy with attribute del</del></p>
     <p><mark>Hello boy with attribute mark</mark> </p>
-    <p><b> E = MC<mark>2</mark> </b>ทำเลขยกกำลังด้วย attribute <mark>sup</mark></p>
+    <p><b> E = MC <sup><mark>2</mark></sup></b>ทำเลขยกกำลังด้วย attribute <mark>sup</mark></p>
     <p><b>H<sub><mark>2</mark></sub>O</b> ทำเลขห้อยด้วย attribute <mark>sub</mark></p>
+    <p>Hello <br> boy with attribute br </p> <!-- br คือการเว้นบรรทัด -->
 
-    <a href="http://www.google.com" target="blank">เปิด google</a>  <!-- tag a ประกอบไปด้วย attribute href(กดแล้วพาไปยัง url นั้น) และ target="blank" (กดแล้วขึ้นหน้าใหม่) -->
+    <hr> 
+
+    <!-- การ link ไปยัง page อื่นมี 2 แบบ 
+    * Internal = link ไปยัง page ที่อยู่ในเครื่อง
+    * External = link ไปยัง page อื่นๆที่อยู่ข้างนอก เช่นพวกลิงค์ url
+    -->
+
+    <!-- Internal Link -->
+    <h3>ทดสอบ Internal Link</h3>
+    <a href="MyHtmlClassP2.html" target="_blank">หน้าที่ 2</a>
+    <a href="MyHtmlClassP3.html" target="_blank">หน้าที่ 3</a>
+    <!-- กรณีอยู่คนละ folder --> <a href="TestLinkPage/Page4.html" target="_blank">หน้าที่ 4</a>
+
+    <hr>
+
+    <!-- External Link -->
+    <h3>ทดสอบ External Link</h3>
+    <a href="https://c.tenor.com/1J9-qnKbPBkAAAAC/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B9%82%E0%B8%95.gif" target="_blank">กดแล้วจะ "ใจเกเร" </a>  <!-- tag a ประกอบไปด้วย attribute href(กดแล้วพาไปยัง url นั้น) และ target="_blank" (กดแล้วขึ้นหน้าใหม่) -->
+    
+    <hr>
+
+    <!-- การใส่รูปภาพ ได้ทั้งแบบ Internal และแบบ External -->
+    <h3>การใส่รูปภาพ</h3>
+    <img src="img/img1.jfif" alt="คำอธิบายาภพ เช่น พี่โตใจเกเร" width="300" height="300">
+    <img src="https://scontent.fbkk2-7.fna.fbcdn.net/v/t1.6435-9/72489673_958408997865928_663514134461022208_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFJp-4AW7dvn40Os8RnFn1kJQfYX_sOTZUlB9hf-w5NlcOxH9Q74gy3eH4Pi3-YvKtOnIK-EJ5NUqt4Ij_d4hEU&_nc_ohc=Al4O-0Bs9GYAX8fLi-n&_nc_ht=scontent.fbkk2-7.fna&oh=00_AT8HtmJJcjqnkstzRYwGgpwW-awIyq6mez0THfzZKaV9Mw&oe=62878D7D" alt="พี่โตต้องการตูดคุณ" width="300" height="300">
+    <!-- สามารถใส่รูปภาพแล้ว link ไปยัง url อื่นได้ด้วย -->
+    <a href="https://t1.blockdit.com/photos/2021/11/617fd2f0af491d11ba4a8b29.jpg" target="_blank"><img src="https://scontent.fbkk2-8.fna.fbcdn.net/v/t1.6435-9/116790128_663671157583754_824787091790281838_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEwTV2eRVsjfFSK6J1fvD4TZj4KI00aWctmPgojTRpZy19wCJlwNQdvfNGdQih1CQ7Vkg71kVBzBIrLos4Lp4S5&_nc_ohc=YkWFHW8wR_oAX9Ir0rp&_nc_ht=scontent.fbkk2-8.fna&oh=00_AT_KXHKV_cx-eK-anSkeB7UrGZlSVfA5iBZf5FsvNr9cuw&oe=62879DF8" alt="กดสิจ๊ะ"></a>
+
+    <hr>
+
+    <h3>การทำลำดับรายการ(List)</h3>
+
+     <!-- การทำ ลำดับรายการ(List) 
+
+        รายการแบบเรียงลำดับ  orderList เช่น 1 2 3 , a b c // ใช้ tag  <ol><li>ข้อความ</li></ol>
+        ใส่ type ได้ <ol type="">
+            - 1 => ตัวเลข 1 2 3 4 5 (default value)
+            - A => อักษรพิมพ์ใหญ่ A B C D E
+            - a => อักษรพิมพ์เล็ก a b c d e
+            - I => เลขโรมันพิมพ์ใหญ่ I II III IV V
+            - i => เลขโรมันพิมพ์เล็ก i ii iii iv v
+        
+        รายการแบบไม่เรียงลำดับ unorderList เช่น สัญลักษณ์วงกลม จุด // ใช้ tag <ul><li>ข้อความ</li></ol>
+        ใส่ type ได้ <ul type="">
+            - disc => จุดกลมสีดำ (defualt)
+            - circle => จุดกลมโปร่ง
+            - sqaure => สี่เหลี่ยมทึบดำ
+    -->
+    <h4>สิ่งที่โตต้องการ แบบ orderList (ol type="a")</h4>
+    <ol type="a"><li>กล้าม</li><li>สะโพก</li><li>ตูด</li><li>หรรม</li></ol>
+    <h4>สิ่งที่โตต้องการ แบบ urderList (ul type="disc")</h4>
+    <ul><li>กล้าม</li><li>สะโพก</li><li>ตูด</li><li>หรรม</li></ul>
+    
+    <hr>
+
 </body>
 </html>
