@@ -35,7 +35,7 @@
     <h5>Hello boy h5</h5>
     <h6>Hello boy h6</h6>
 
-    <hr> <!-- hr คือการสร้างเส้นคั่น -->
+    <br><hr><br> <!-- hr คือการสร้างเส้นคั่น -->
 
     <h1><mark><u>การใส่กลุ่มข้อความด้วย tag p</u></mark></h1>
     <p>Hello boy p textttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p> <!-- tag p เป็นกลุ่มของ text ธรรมดาส่วนใหญ่ใช้กับเนื้อหายาวๆ -->
@@ -50,7 +50,7 @@
     <p><b>H<sub><mark>2</mark></sub>O</b> ทำเลขห้อยด้วย attribute <mark>sub</mark></p>
     <p>Hello <br> boy with attribute br </p> <!-- br คือการเว้นบรรทัด -->
 
-    <hr> 
+    <br><hr><br> 
 
     <!-- การ link ไปยัง page อื่นมี 2 แบบ 
     * Internal = link ไปยัง page ที่อยู่ในเครื่อง
@@ -63,13 +63,13 @@
     <a href="MyHtmlClassP3.html" target="_blank">หน้าที่ 3</a>
     <!-- กรณีอยู่คนละ folder --> <a href="TestLinkPage/Page4.html" target="_blank">หน้าที่ 4</a>
 
-    <hr>
+    <br><hr><br>
 
     <!-- External Link -->
     <h1><mark><u>ทดสอบ External Link</u></mark></h1><br>
     <a href="https://c.tenor.com/1J9-qnKbPBkAAAAC/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B9%82%E0%B8%95.gif" target="_blank">กดแล้วจะ "ใจเกเร" </a>  <!-- tag a ประกอบไปด้วย attribute href(กดแล้วพาไปยัง url นั้น) และ target="_blank" (กดแล้วขึ้นหน้าใหม่) -->
     
-    <hr>
+    <br><hr><br>
 
     <!-- การใส่รูปภาพ ได้ทั้งแบบ Internal และแบบ External -->
     <h1><mark><u>การใส่รูปภาพ</u></mark></h1><br>
@@ -78,7 +78,7 @@
     <!-- สามารถใส่รูปภาพแล้ว link ไปยัง url อื่นได้ด้วย -->
     <a href="https://t1.blockdit.com/photos/2021/11/617fd2f0af491d11ba4a8b29.jpg" target="_blank"><img src="https://scontent.fbkk2-8.fna.fbcdn.net/v/t1.6435-9/116790128_663671157583754_824787091790281838_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEwTV2eRVsjfFSK6J1fvD4TZj4KI00aWctmPgojTRpZy19wCJlwNQdvfNGdQih1CQ7Vkg71kVBzBIrLos4Lp4S5&_nc_ohc=YkWFHW8wR_oAX9Ir0rp&_nc_ht=scontent.fbkk2-8.fna&oh=00_AT_KXHKV_cx-eK-anSkeB7UrGZlSVfA5iBZf5FsvNr9cuw&oe=62879DF8" alt="กดสิจ๊ะ"></a>
 
-    <hr>
+    <br><hr><br>
 
     <h1><mark><u>การทำลำดับรายการ (List)</u></mark></h1><br>
 
@@ -103,7 +103,7 @@
     <h4>สิ่งที่โตต้องการ แบบ urderList (ul type="disc")</h4>
     <ul><li>กล้าม</li><li>สะโพก</li><li>ตูด</li><li>หรรม</li></ul>
     
-    <hr>
+    <br><hr><br>
 
     <!-- การสร้างตาราง 
     รูปแบบของตารางจะมีส่วนประกอบตามนี้
@@ -190,7 +190,7 @@
         </tfoot>
     </table>
 
-    <hr>
+    <br><hr><br>
 
     <h1><mark><u>การสร้างตาราง (แบบใช้ attribute)</u></mark></h1>
     <table border="1" align="Center" width="90%" cellpadding="10" cellspacing="0">
@@ -227,8 +227,125 @@
         </tfoot>
     </table>
 
-    <hr>
+    <br><hr><br>
 
+    <h1><mark><u>การจัดกลุ่มข้อความด้วย div และ span</u></mark></h1>
+    <h3 style="color: red;">div เป็นการจัดกลุ่ม ฟีลแบบเหมือนเป็นกล่องไว้ใส่ของจะมีขอบเขตเป็นแนวนอนยาว ตามกรอบสีแดง</h3>
+    <h3 style="color: blue;">span เป็นการจัดกลุ่มเหมือน div เลยแต่ต่างกันตรงขอบเขต ตามกรอบสีน้ำเงิน</h3>
+
+    <div style="border: 1px solid red; color: red;"> <!-- solid คือการกำหนดเส้นขอบทึบ -->
+        div ก้อนที่ 1 
+    </div>
+    <div style="border:1px solid red; color:red;">
+       div ก้อนที่ 2
+    </div><br>
+    <span style="border:1px solid blue; color:blue;">
+       span ก้อนที่ 1
+    </span>
+    <span style="border:1px solid blue; color:blue;">
+        span ก้อนที่ 2
+    </span>
+    <h3>สรุปคือเราจะเห็นได้ว่า div กับ span เอาไว้จัดกลุ่มเหมือนกัน แต่ต่างกันตรงที่</h3>
+    <h3 style="color: red;">div มีขนาดเป็น block (แถวยาว)</h3>
+    <h3 style="color: blue;">span มีขนาดเป็น inline (ตามขนาดบรรจุ)</h3>
+
+    <br><hr><br>
+
+    <h1><mark><u>การทำ form เพื่อกรอกข้อมูล</u></mark></h1>
+    <!-- การทำ form เพื่อกรอกข้อมูล 
+    เราจะเขียนภายใน tag form <form> </form>
+    
+    <label>          = ชื่อช่อง form
+    <input type="">  = ช่องรับข้อมูล Type ตามที่เรากำหนด
+    <textarea>       = ช่องรับข้อมูลหลายบรรทัด คล้ายๆช่อง comment
+    <select>         = ช่องรับข้อมูลแบบ ตัวเลือก Drop-down
+    <opinon>         = สร้างตัวเลือก
+    <button>         = สร้างปุ่ม
+    -->
+    <h3>แบบฟอร์มลงทะเบียนเพื่อใช้บริการพี่โต</h3>
+    <form action="">  <!-- action คือจุดที่เราจะส่งข้อมูลไป เช่น ฝั่ง Server -->
+        <div>
+            <label for="firstname">ชื่อจริง</label> <!-- for = ป้ายชื่อกำกับ -->
+            <input type="text" name="fname" placeholder="ป้อนชื่อให้พี่โต" required> <!-- name = ป้ายกำกับเหมือนกัน -->
+        </div>
+        <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text" name="lname" placeholder="ป้อนนามสกุลให้พี่โต" required> <!-- attribute required คือการบังคับใส่ข้อมูลให้ถูกต้อง -->
+        </div>                                                                      <!-- เพิ่มเติม attribute readonly คือการทำให้ค่าแก้ไขไม่ได้ -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="ป้อน Email ให้พี่โต" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="ป้อน Password ให้พี่โต" required>
+        </div>
+        <div>
+            <label for="Age">อายุ</label>
+            <input type="number" name="Age" min="1" max="30" placeholder="ป้อนอายุให้พี่โต" value="18" required> (กำหนดค่าเริ่มต้น = 18) <!-- กำหนด minmax และ value(ค่าเริ่มต้น) ได้-->
+        </div>
+        <div>
+            <label for="birthday">วันเกิด</label>
+            <input type="date" name="birthday" required> <!-- type date ป้อน placeholder มะได้-->
+        </div>
+        <div>
+            <label for="color">พี่โตอยากรู้ว่าคุณชอบสีอะไร</label>
+            <input type="color" name="color" required>
+        </div>
+        <div>
+            <label for="tel">พี่โตอยากได้เบอร์โทรคุณ</label>
+            <input type="tel" name="tel" placeholder="เอาเบอร์มา" required>
+        </div>
+        <div>
+            <label for="testrange">เลือกระดับความโหดของพี่โต</label>
+            <input type="range" name="testrange" required> (มีค่า 0-100)
+        </div>
+        <div>
+            <label for="choice">คุณต้องการพี่โตไหม</label>
+            <input type="radio" name="toppic1">ต้องการ    <!-- ตัว radio ถ้าตั้งชื่อเหมือนกัน (name="toppic1") จะเป็นตัวเลือกให้เลือก 1 ข่อ-->
+            <input type="radio" name="toppic1">ต้องการมาก
+            <input type="radio" name="toppic1">ต้องการมากกกก <br>
+            <label for="choice 2">อยากให้พี่โตไปหาไหม</label>
+            <input type="radio" name="toppic2">อยาก      <!-- ตัว radio ถ้าตั้งชื่อเหมือนกัน (name=" ") จะเป็นตัวเลือกให้เลือกหลายข่อ-->
+            <input type="radio" name="toppic3">อยากมาก
+            <input type="radio" name="toppic4">อยากมากกก     
+        </div>
+        <div>
+            <label for="checkboxtest">พร้อมยัง</label>
+            <input type="checkbox" name="checkboxtest"> พร้อม        <!-- ตัว Checkbox จะเลือกได้หลายตัวเลือกแม้จะเป็นชื่อหัวข้อเดียวกัน -->
+            <input type="checkbox" name="checkboxtest"> พร้อมม
+            <input type="checkbox" name="checkboxtest"> พร้อมมม
+            <input type="checkbox" name="checkboxtest"> พร้อมมมม
+        </div>
+        <div>
+            <label for="yourfile">แนบไฟล์ของคุณให้พี่โต</label>
+            <input type="file" name="yourfile">     
+        </div>
+        <div>
+            <label for="yoururl">แนบลิงค์ของคุณให้พี่โต</label>
+            <input type="url" name="yoururl" placeholder="เอาลิงค์มาอิอิ">     
+        </div>
+        <div>
+            <label for="Tochoice">เลือกสิ่งที่คุณต้องการตอนนี้</label>      
+            <select name="Tochioce">                            <!-- การใช้ select และ option -->
+                <option value="choice1">พี่โตที่ 1</option>
+                <option value="choice2">พี่โตที่ 2</option>
+                <option value="choice3">พี่โตที่ 3</option>
+                <option value="choice4" selected>พี่โตที่ 4 </option>  <!-- selected คือการกำหนดค่าเริ่มต้นให้ select -->
+            </select>
+        </div>
+        <div>
+            <label for="comment">เขียน Comment ให้พี่โต</label>
+            <textarea name="comment" cols="30" rows="5">เขียนคอมเม้นให้พี่โตที</textarea>  <!-- การใช้ textarea // cols = ความสูงแนวนอน rows = ความสูงแนวตั้ง-->
+        </div>
+        <div>
+            <br><button type="submit">กดเพื่อส่งข้อมูลให้พี่โต</button> <!-- การใช้ button -->
+            <!-- <input type="submit">กดเพื่อส่งข้อมูลให้พี่โต</input>  ใช้แบบนี้แทนก็ได้เหมือนกัน -->
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </form>
+    
+    <br><hr><br>
 
 </body>
 </html>
